@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Our Creed League — Power Rankings</title>
+<meta property="og:title" content="Our Creed League — Power Rankings">
+<meta property="og:description" content="Weekly power rankings, superlatives, and team roasts.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏈</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg-base: #0F1B2E;
+    --bg-surface: #17263D;
+    --accent-gold: #E7B23A;
+    --accent-silver: #C7D0DA;
+    --accent-bronze: #CD8A4E;
+    --text-primary: #F4F6F9;
+    --text-muted: #96A3B8;
+    --luck-good: #3ECF8E;
+    --luck-bad: #F0576B;
+    --divider: #2A3B57;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg-base);
+    color: var(--text-primary);
+    font-family: 'Inter', sans-serif;
+    line-height: 1.5;
+  }
+  .wrap {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 32px 20px 64px;
+  }
+  .hero { text-align: center; margin-bottom: 32px; }
+  .hero h1 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 1.6rem;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    margin: 0 0 4px;
+    color: var(--accent-gold);
+  }
+  @media (min-width: 480px) {
+    .hero h1 { font-size: 2rem; }
+  }
+  .hero .sub { color: var(--text-muted); font-size: 0.9rem; margin: 0; }
+  h2 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin: 40px 0 14px;
+    color: var(--text-primary);
+  }
+  ul.rankings { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; }
+  .team-card {
+    display: flex; align-items: center; gap: 14px;
+    background: var(--bg-surface);
+    border: 1px solid var(--divider);
+    border-radius: 10px;
+    padding: 12px 14px;
+  }
+  .rank { font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 1.4rem; width: 2ch; text-align: center; flex-shrink: 0; }
+  .rank-gold { color: var(--accent-gold); }
+  .rank-silver { color: var(--accent-silver); }
+  .rank-bronze { color: var(--accent-bronze); }
+  .rank-plain { color: var(--text-muted); }
+  .team-main { flex: 1; min-width: 0; }
+  .team-name { font-weight: 600; font-size: 1.02rem; }
+  .team-meta { color: var(--text-muted); font-size: 0.85rem; margin-top: 2px; }
+  .badges { display: flex; gap: 6px; margin-top: 6px; flex-wrap: wrap; }
+  .badge { display: inline-block; font-size: 0.78rem; font-weight: 500; padding: 2px 8px; border-radius: 999px; }
+  .badge-good { background: rgba(62,207,142,0.15); color: var(--luck-good); }
+  .badge-bad { background: rgba(240,87,107,0.15); color: var(--luck-bad); }
+  .badge-neutral { background: rgba(150,163,184,0.12); color: var(--text-muted); }
+  .awards-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; }
+  .award-card { background: var(--bg-surface); border: 1px solid var(--divider); border-radius: 10px; padding: 12px 14px; }
+  .award-title { font-size: 0.78rem; font-weight: 600; color: var(--accent-gold); margin-bottom: 4px; }
+  .award-main { font-weight: 600; font-size: 1rem; }
+  .award-sub { color: var(--text-muted); font-size: 0.82rem; margin-top: 2px; }
+  .bio-card {
+    background: var(--bg-surface); border: 1px solid var(--divider);
+    border-left: 3px solid var(--accent-gold);
+    border-radius: 8px; padding: 14px 16px; margin-bottom: 10px;
+  }
+  .bio-team { font-family: 'Oswald', sans-serif; font-weight: 600; font-size: 1rem; margin-bottom: 6px; }
+  .bio-text { margin: 0; color: var(--text-primary); font-size: 0.92rem; }
+  footer { text-align: center; color: var(--text-muted); font-size: 0.78rem; margin-top: 48px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="hero">
+    <h1>Dbag League</h1>
+    <p class="sub">Week 3 Power Rankings &middot; Updated 2026-09-23</p>
+  </div>
+
+  <h2>🏈 Rankings</h2>
+  <ul class="rankings">
+    
+        <li class="team-card">
+          <div class="rank rank-gold">1</div>
+          <div class="team-main">
+            <div class="team-name">The Best Team</div>
+            <div class="team-meta">0-2-0 &middot; Power 159.5</div>
+            <div class="badges"><span class="badge badge-bad">😤 Unlucky +8</span><span class="badge badge-bad">🧊 L2</span></div>
+          </div>
+        </li>
+        <li class="team-card">
+          <div class="rank rank-silver">2</div>
+          <div class="team-main">
+            <div class="team-name">Top G</div>
+            <div class="team-meta">2-0-0 &middot; Power 157.4</div>
+            <div class="badges"><span class="badge badge-neutral">Even</span><span class="badge badge-good">🔥 W2</span></div>
+          </div>
+        </li>
+        <li class="team-card">
+          <div class="rank rank-bronze">3</div>
+          <div class="team-main">
+            <div class="team-name">THE STIRRER</div>
+            <div class="team-meta">1-1-0 &middot; Power 151.3</div>
+            <div class="badges"><span class="badge badge-neutral">Even</span><span class="badge badge-neutral">W1</span></div>
+          </div>
+        </li>
+        <li class="team-card">
+          <div class="rank rank-plain">4</div>
+          <div class="team-main">
+            <div class="team-name">The Hebrew Hammer</div>
+            <div class="team-meta">2-0-0 &middot; Power 145.2</div>
+            <div class="badges"><span class="badge badge-good">🍀 Lucky -2</span><span class="badge badge-good">🔥 W2</span></div>
+          </div>
+        </li>
+        <li class="team-card">
+          <div class="rank rank-plain">5</div>
+          <div class="team-main">
+            <div class="team-name">The DogPound Boys</div>
+            <div class="team-meta">1-1-0 &middot; Power 145.1</div>
+            <div class="badges"><span class="badge badge-neutral">Even</span><span class="badge badge-neutral">W1</span></div>
+          </div>
+        </li>
+        <li class="team-card">
+          <div class="rank rank-plain">6</div>
+          <div class="team-main">
+            <div class="team-name">Team Auto-Luck</div>
+            <div class="team-meta">0-2-0 &middot; Power 132.4</div>
+            <div class="badges"><span class="badge badge-bad">😤 Unlucky +4</span><span class="badge badge-bad">🧊 L2</span></div>
+          </div>
+        </li>
+        <li class="team-card">
+          <div class="rank rank-plain">7</div>
+          <div class="team-main">
+            <div class="team-name">Choo Choo</div>
+            <div class="team-meta">1-1-0 &middot; Power 127.4</div>
+            <div class="badges"><span class="badge badge-good">🍀 Lucky -3</span><span class="badge badge-neutral">W1</span></div>
+          </div>
+        </li>
+        <li class="team-card">
+          <div class="rank rank-plain">8</div>
+          <div class="team-main">
+            <div class="team-name">Fighting  Falafel </div>
+            <div class="team-meta">1-1-0 &middot; Power 124.3</div>
+            <div class="badges"><span class="badge badge-good">🍀 Lucky -2</span><span class="badge badge-neutral">L1</span></div>
+          </div>
+        </li>
+        <li class="team-card">
+          <div class="rank rank-plain">9</div>
+          <div class="team-main">
+            <div class="team-name">Team TikTok</div>
+            <div class="team-meta">1-1-0 &middot; Power 123.7</div>
+            <div class="badges"><span class="badge badge-good">🍀 Lucky -2</span><span class="badge badge-neutral">L1</span></div>
+          </div>
+        </li>
+        <li class="team-card">
+          <div class="rank rank-plain">10</div>
+          <div class="team-main">
+            <div class="team-name">Pearl Onions </div>
+            <div class="team-meta">1-1-0 &middot; Power 113.1</div>
+            <div class="badges"><span class="badge badge-good">🍀 Lucky -2</span><span class="badge badge-neutral">L1</span></div>
+          </div>
+        </li>
+  </ul>
+
+  <h2>🏆 League Superlatives</h2>
+  <div class="awards-grid">
+    
+        <div class="award-card">
+          <div class="award-title">🏆 Best Record</div>
+          <div class="award-main">Top G</div>
+          <div class="award-sub">2-0-0</div>
+        </div>
+        <div class="award-card">
+          <div class="award-title">🍀 Luckiest Team</div>
+          <div class="award-main">Choo Choo</div>
+          <div class="award-sub">Outperforming power rank by 3 spot(s)</div>
+        </div>
+        <div class="award-card">
+          <div class="award-title">😤 Unluckiest Team</div>
+          <div class="award-main">The Best Team</div>
+          <div class="award-sub">Underperforming power rank by 8 spot(s)</div>
+        </div>
+        <div class="award-card">
+          <div class="award-title">🔥 Hot Streak</div>
+          <div class="award-main">Top G</div>
+          <div class="award-sub">W2</div>
+        </div>
+        <div class="award-card">
+          <div class="award-title">🧊 Ice Cold</div>
+          <div class="award-main">The Best Team</div>
+          <div class="award-sub">L2</div>
+        </div>
+        <div class="award-card">
+          <div class="award-title">💥 Best Point Diff</div>
+          <div class="award-main">Top G</div>
+          <div class="award-sub">+64.8 pts</div>
+        </div>
+        <div class="award-card">
+          <div class="award-title">⭐ League MVP</div>
+          <div class="award-main">Josh Allen</div>
+          <div class="award-sub">The DogPound Boys — 38.2 pts/gm</div>
+        </div>
+        <div class="award-card">
+          <div class="award-title">🪑 Biggest Weak Link</div>
+          <div class="award-main">Colston Loveland</div>
+          <div class="award-sub">The Hebrew Hammer — 0.7 pts/gm</div>
+        </div>
+  </div>
+
+  <h2>📋 Team Rundown</h2>
+  
+        <div class="bio-card">
+          <div class="bio-team">The Best Team</div>
+          <p class="bio-text">The Best Team is sitting pretty at #1, and it shows - completely insufferable about it. Somehow simultaneously the best and the worst team in this league, The Best Team remains inexplicably obsessed with Zach Ertz for reasons no one has ever been able to explain. Book it now: no more championships are coming. Christian McCaffrey is the one bright spot going forward for The Best Team at a projected 19.5 pts/game - meanwhile Dalton Schultz&#x27;s projected 9.3 explains a lot.</p>
+        </div>
+        <div class="bio-card">
+          <div class="bio-team">Top G</div>
+          <p class="bio-text">Nobody likes a team that&#x27;s actually good. Top G sitting at #2 needs to be stopped. Sure, the sushi reservation was smart, even cute. But let&#x27;s not pretend Top G isn&#x27;t running the exact same scam here that the family Ponzi business runs everywhere else. Going forward, Top G should keep riding Jahmyr Gibbs (25.4 projected pts/game) and start shopping the waiver wire for anyone better than De&#x27;Zhaun Stribling (0.0 projected).</p>
+        </div>
+        <div class="bio-card">
+          <div class="bio-team">THE STIRRER</div>
+          <p class="bio-text">#3 overall for THE STIRRER. Someone needs to take them down a peg before the ego gets any bigger. Three championships and an ego to match - THE STIRRER is, objectively, the biggest scumbag this league has ever produced, and everyone still brings it up. The good news for THE STIRRER: Ja&#x27;Marr Chase is projected for 20.0 pts/game the rest of the way. The bad news: so is Makai Lemon, if you squint hard enough (5.7).</p>
+        </div>
+        <div class="bio-card">
+          <div class="bio-team">The Hebrew Hammer</div>
+          <p class="bio-text">The Hebrew Hammer at #4 and loving every second of it. Revolting, honestly. Hoboken is not far away. Everyone knows it. The Hebrew Hammer, please stop acting like crossing the river once a year is some kind of pilgrimage. If The Hebrew Hammer is going anywhere this season, it&#x27;s because of Amon-Ra St. Brown (20.4 projected). If they&#x27;re not, blame Keon Coleman (6.2 projected, and it shows).</p>
+        </div>
+        <div class="bio-card">
+          <div class="bio-team">The DogPound Boys</div>
+          <p class="bio-text">Nothing to see here - The DogPound Boys at #5, coasting through the season unnoticed and unbothered. Nobody understood The DogPound Boys&#x27;s draft this year - genuinely bizarre choices from top to bottom - and yet somehow, impossibly, the playoffs are calling again. If The DogPound Boys is going anywhere this season, it&#x27;s because of Josh Allen (22.9 projected). If they&#x27;re not, blame Keaton Mitchell (4.9 projected, and it shows).</p>
+        </div>
+        <div class="bio-card">
+          <div class="bio-team">Team Auto-Luck</div>
+          <p class="bio-text">Perfectly, agonizingly average - Team Auto-Luck sits at #6 and nobody is impressed. Team Auto-Luck does not care about fantasy football, and it does not matter, because Kenzie is an actual lock goddess who wins anyway. Going forward, Team Auto-Luck should keep riding Jaxon Smith-Njigba (20.3 projected pts/game) and start shopping the waiver wire for anyone better than Marvin Harrison Jr. (7.1 projected).</p>
+        </div>
+        <div class="bio-card">
+          <div class="bio-team">Choo Choo</div>
+          <p class="bio-text">#7. Choo Choo. Let that sink in for a moment. Japan cannot come soon enough for Choo Choo, who honestly needs to move on from fantasy football at this point. Jonathan Taylor is the one bright spot going forward for Choo Choo at a projected 21.4 pts/game - meanwhile Kaelon Black&#x27;s projected 6.6 explains a lot.</p>
+        </div>
+        <div class="bio-card">
+          <div class="bio-team">Fighting  Falafel </div>
+          <p class="bio-text">Fighting  Falafel  is dead last at #8 and honestly, deserves it. Somebody explain to Fighting  Falafel  that their roster doesn&#x27;t match their record, because it clearly hasn&#x27;t sunk in yet. Everyone in this league saw that coming except Fighting  Falafel . The good news for Fighting  Falafel : Bijan Robinson is projected for 20.1 pts/game the rest of the way. The bad news: so is Tank Bigsby, if you squint hard enough (3.3).</p>
+        </div>
+        <div class="bio-card">
+          <div class="bio-team">Team TikTok</div>
+          <p class="bio-text">It&#x27;s not looking good for Team TikTok - #9 overall and actively getting worse. Team TikTok legitimately drafted this roster using TikTok trends, and look at this pile of trash. Deserved, honestly. Going forward, Team TikTok should keep riding De&#x27;Von Achane (19.5 projected pts/game) and start shopping the waiver wire for anyone better than Jonathon Brooks (7.0 projected).</p>
+        </div>
+        <div class="bio-card">
+          <div class="bio-team">Pearl Onions </div>
+          <p class="bio-text">Pearl Onions  at #10 is what happens when you draft with your eyes closed and your heart full of hope. Pearl Onions  is a fully AI-drafted roster, and infuriatingly, it always ends up being decent. Nobody knows how or why. Puka Nacua is the one bright spot going forward for Pearl Onions  at a projected 22.5 pts/game - meanwhile Tyrone Tracy Jr.&#x27;s projected 0.0 explains a lot.</p>
+        </div>
+
+  <footer>Generated automatically from ESPN league data.</footer>
+</div>
+</body>
+</html>
